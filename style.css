@@ -1,0 +1,75 @@
+@charset "utf- 8";
+
+@font-face {
+    font-family: font1;
+    src: url(Copyduck.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #d00070;
+    background: linear-gradient(0deg, rgba(208,0,112,1) 0%, rgba(0,212,255,1) 100%);
+    color: #fff;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 8px;
+}
+
+.cell {
+    border: 3px solid #fff;
+    border-radius: 20px;
+    background: #f3ea5d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 64px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-family: font1;
+    font-size: 6em;
+    text-shadow:#d00070 10px 10px 10px;
+}
+
+.game h1 {
+    font-family: font1;
+    font-size: 3em;
+}
+
+.btn{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-top: 85vh;
+  padding-right: 20vw;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+    font-size: 1.1em;
+    border: #fff;
+    border-radius: 10px;
+    background: #8bb8e8;
+    color: #fff;
+    text-shadow:#d00070 2px 2px 2px;
+
+}
+
+.game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.2em;
+    font-family: font1;
+}
